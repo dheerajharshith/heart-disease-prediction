@@ -1,0 +1,117 @@
+A simple yet effective web application built using Streamlit and Machine Learning to predict the risk of heart disease based on user input. The model was trained on clinical features and uses a Decision Tree (or similar model) for binary classification.
+
+🧪 Features
+
+Predicts high or low risk of heart disease
+
+User-friendly input interface for medical features
+
+Uses a trained ML model with proper feature scaling
+
+Real-time predictions directly in your browser
+
+Encoded clinical inputs for accurate modeling
+
+🚀 Demo
+
+Click the “Predict” button after entering your values to see your risk level (High or Low).Prediction is based on features such as age, chest pain type, cholesterol, and more.
+
+🔍 Technologies Used
+
+Python
+
+Streamlit (Web UI)
+
+Scikit-learn (ML model training)
+
+Joblib (Model and preprocessing persistence)
+
+NumPy
+
+📁 Project Structure
+
+├── heart_disease_model.pkl   # Trained ML model
+├── scaler.pkl                # Feature scaler used during training
+├── model_columns.pkl         # Feature names used by the model
+├── app.py                    # Main Streamlit app
+└── README.md                 # Project documentation
+
+⚙️ How to Run
+
+Clone the repository:
+
+git clone https://github.com/yourusername/heart-disease-prediction.git
+cd heart-disease-prediction
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+Run the app:
+
+streamlit run app.py
+
+📝 Input Features
+
+Feature
+
+Description
+
+Age
+
+Age in years
+
+Sex
+
+Male/Female
+
+Chest Pain Type
+
+TA, ATA, NAP, ASY
+
+Resting BP
+
+Resting blood pressure (mm Hg)
+
+Cholesterol
+
+Serum cholesterol (mg/dl)
+
+Fasting Blood Sugar
+
+>120 mg/dl (1: True, 0: False)
+
+Resting ECG
+
+Normal, ST, or LVH
+
+Max Heart Rate
+
+Achieved max heart rate
+
+Exercise-Induced Angina
+
+Yes/No
+
+Oldpeak
+
+ST depression induced by exercise
+
+ST Slope
+
+Up, Flat, Down
+
+✅ Prediction Output
+
+✅ Low risk of heart disease
+
+⚠️ High risk of heart disease
+
+📌 Future Improvements
+
+Add model accuracy and evaluation metrics
+
+Integrate with real-time health data APIs
+
+Deploy the app to the cloud (Streamlit Cloud / Heroku)
+
